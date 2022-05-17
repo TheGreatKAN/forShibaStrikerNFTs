@@ -1,0 +1,20 @@
+{
+  "CONTRACT_ADDRESS": "0x1dc7C418aE06d50f55f78d73772B1dd465842Af7",
+  "SCAN_LINK": "https://testnet.bscscan.com/address/0x1dc7C418aE06d50f55f78d73772B1dd465842Af7",
+  "NETWORK": {
+    "NAME": "BNB Testnet",
+    "SYMBOL": "BNB",
+    "ID": 97
+  },
+  "NFT_NAME": "Crypto Jackpot Golden Tickets",
+  "SYMBOL": "CJPGT",
+  "MAX_SUPPLY": 250,
+  "WEI_COST": 50000000000000000,
+  "DISPLAY_COST": 1,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "OBLIVION.ART",
+  "WEBSITE": "https://crypto-jackpot.com",
+  "MARKETPLACE_LINK": "https://oblivion.art/explore/listings",
+  "JACKPOT_LINK": "https://crypto-jackpot.com/jackpot-results/",
+  "SHOW_BACKGROUND": true
+}

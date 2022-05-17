@@ -1,0 +1,48 @@
+{
+  "name": "crypto_jackpot_golden_tickets",
+  "version": "1.0.0",
+  "description": "Mint your Golden Tickets!",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@material-ui/core": "^4.12.4",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/material": "^5.7.0",
+    "@walletconnect/web3-provider": "^1.7.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-native": "^0.68.2",
+    "react-native-web": "^0.17.7",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^6.3.0",
+    "react-router-native": "^6.3.0",
+    "react-scripts": "^4.0.3",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.3.0",
+    "walletlink": "^2.5.0",
+    "web-vitals": "^1.0.1",
+    "web3": "^1.5.1",
+    "web3-eth-contract": "^1.5.2",
+    "web3modal": "^1.9.7"
+  },
+  "author": "Aaron Kandrac",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

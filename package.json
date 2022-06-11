@@ -1,7 +1,7 @@
 {
-  "name": "crypto_jackpot_golden_tickets",
+  "name": "vrtrinity_nft_minting_dapp",
   "version": "1.0.0",
-  "description": "Mint your Golden Tickets!",
+  "description": "Mint Your VrTrinity NFTs!!!",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",

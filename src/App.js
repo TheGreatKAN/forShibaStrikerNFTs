@@ -115,10 +115,24 @@ export const StyledImg2 = styled.img`
   }
   transition: width 0.5s;
 `;
+export const StyledImg3 = styled.img`
+  box-shadow: 3px 5px 11px 2px rgba(0, 0, 0, 0.7);
+
+  background-color: var(--accent);
+  border-radius: 10%;
+  width: 50px;
+  @media (min-width: 900px) {
+    width: 175px;
+  }
+  @media (min-width: 1000px) {
+    width: 175px;
+  }
+  transition: width 0.5s;
+`;
 
 
 export const StyledLink = styled.a`
-  color: var(--secondary);
+  color: var(--link-text);
   text-decoration: none;
 `;
 
@@ -174,7 +188,7 @@ function App() {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          'The Golden Ticket is Yours! GOOD LUCK!!!'
+          'Congrats, you now own a VrTrinity NFT!!!'
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -231,7 +245,7 @@ function App() {
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
 
-        <StyledLogo alt={"logo"} src={"/config/images/logo.gif"} />
+        <StyledLogo alt={"logo"} src={"/config/images/loho.gif"} />
 
         <s.SpacerXSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
@@ -267,7 +281,7 @@ function App() {
               }}
             >
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
+               0xDc0786aA06f41Fe85e56D7581EB8c6cf53F5196B
               </StyledLink>
             </s.TextDescription>
             <span
@@ -285,20 +299,10 @@ function App() {
               >Project Website
 
               </StyledButton>
-              <StyledButton
-                style={{
-                  margin: "5px",
-                }}
-                onClick={(e) => {
-                  window.open(CONFIG.JACKPOT_LINK);
-                } }
-              >Weekly Draw
-
-              </StyledButton>
-              
+        
             </span>
 
-
+            <StyledImg3 alt={"example"} src={"/config/images/244.gif"} />
             
             <s.SpacerXSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
@@ -319,13 +323,14 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Golden Tickets cost .05 BNB each
+                  VrTrinity NFTs cost .1 BNB each
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Each ticket gives you 2 draws weekly.
+          
+
                 </s.TextDescription>
                 <s.SpacerXSmall />
                 {blockchain.account === "" ||
@@ -460,7 +465,7 @@ ai={"center"} >
           <View style={{ position: 'fixed', left: 0, bottom: 0, }}>
             <ResponsiveWrapper>
               <s.Container flex={1}>
-                <a href={"https://oblivion.art/"}>
+                <a href={"https://rebrand.ly/vrtrinity-corner2"}>
                   <StyledImg2
                     alt={"example"}
                     src={"/config/images/oblivionlogo.png"} />
@@ -468,7 +473,7 @@ ai={"center"} >
               </s.Container>
               <s.SpacerXSmall/>
               <s.Container flex={19}>
-                <a href={"https://rebrand.ly/oo5xlw1"}>
+                <a href={"https://rebrand.ly/vrtrinity-corner"}>
                   <StyledImg2
                     alt={"example"}
                     src={"/config/images/walletnowlogo.png"} />

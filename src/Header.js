@@ -17,11 +17,11 @@ export const StyledImg = styled.img`
   
   border-radius: 0%;
   width: 120px;
-  @media (min-width: 900px) {
-    width: 600px;
+  @media (min-width:1 px) {
+    width: 540px;
   }
-  @media (min-width: 10000px) {
-    width: 200px;
+  @media (min-width: 1px) {
+    width: 540px;
   }
   
 `;
@@ -31,12 +31,13 @@ export const StyledImg = styled.img`
 
 export const ResponsiveWrapper = styled.div`
   display: flex;
-  flex: 10;
-  flex-direction: column;
+  flex: 1;
+  flex-direction: row;
+  backgroundColor: 'lightblue';
   justify-content: stretched;
   align-items: stretched;
-  width: 1000%;
-  @media (min-width: 767px)  {
+  width: 100%;
+  @media (min-width: 4px)  {
     flex-direction: row;
   }
 `;
@@ -48,25 +49,22 @@ export const ResponsiveWrapper = styled.div`
 
 export default function Header() {
   return (
-      <AppBar position="static" style={{backgroundColor: '#ffffff'}}>
+      <AppBar position="static" style={{backgroundColor: '#000000'}}>
+        
       <ResponsiveWrapper>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
-          <SpacerLarge></SpacerLarge>
+
+      <a href={"https://vr-trinity.com/"}>
+      <StyledImg alt={"example"} src={"/config/images/VrTad.gif"} />
+      </a>
+
+      <a href={"https://rebrand.ly/Vrtrinity-BannerADD2"}>
+      <StyledImg alt={"example"} src={"/config/images/if1ad.gif"} />
+      </a>
+
+      <a href={"https://rebrand.ly/vrtrinity-BannerADD"}>
         <StyledImg alt={"example"} src={"/config/images/walletnowad.gif"} />
+        </a>
+        
         </ResponsiveWrapper>
         
       </AppBar>

@@ -12,9 +12,9 @@ const providerOptions = {
   walletconnect: {
     package: WalletConnectProvider, // required
     options: {
-      infuraId: "https://bsc-dataseed1.defibit.io/", // required
+      infuraId: "https://mainnet.infura.io/v3/5bea73e5d06345ab99b16bc3efa8ccaf", // required
       rpc: {
-        56: "https://bsc-dataseed1.defibit.io/", // AVAX C-Chain
+        4: "https://mainnet.infura.io/v3/5bea73e5d06345ab99b16bc3efa8ccaf", // AVAX C-Chain
       },
     },
   },

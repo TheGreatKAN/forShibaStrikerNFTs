@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0xDc0786aA06f41Fe85e56D7581EB8c6cf53F5196B",
-  "SCAN_LINK": "https://bscscan.com/token/0xDc0786aA06f41Fe85e56D7581EB8c6cf53F5196B",
+  "CONTRACT_ADDRESS": "0x220964dA285E709B69eD7CD694b44B215296b3A3",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x220964dA285E709B69eD7CD694b44B215296b3A3",
   "NETWORK": {
-    "NAME": "Binance Smart Chain",
-    "SYMBOL": "BNB",
-    "ID": 56
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 1
   },
-  "NFT_NAME": "VrTrinity NFT",
-  "SYMBOL": "VRTnft",
-  "MAX_SUPPLY": 1000,
-  "WEI_COST": 100000000000000000,
+  "NFT_NAME": "MOJI NFT",
+  "SYMBOL": "MOJInft",
+  "MAX_SUPPLY": 6654,
+  "WEI_COST": 150000000000000000,
   "DISPLAY_COST": 0.1,
   "GAS_LIMIT": 285000,
-  "MARKETPLACE": "OBLIVION.ART",
+  "MARKETPLACE": "OpenSea",
   "WEBSITE": "https://vr-trinity.com",
   "MARKETPLACE_LINK": "https://oblivion.art/explore/listings",
   "SHOW_BACKGROUND": true

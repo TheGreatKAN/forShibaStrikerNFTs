@@ -355,17 +355,26 @@ function App() {
 
                 </s.TextDescription>
                 <s.SpacerXSmall />
+                <s.SpacerXSmall />
+                  
                 <StyledButton
                       onClick={(e) => {
                         <WinterCheckout 
-    projectId={1090} 
-    production={true} 
-    showModal={false} 
-/>
+                          projectId={1090} 
+                          production={true} 
+                          showModal={true} 
+                        />
                       } }
                     >
                       Buy With Card
                     </StyledButton>
+                  
+                  
+                  <WinterCheckout 
+                          projectId={1090} 
+                          production={true} 
+                          showModal={true} 
+                   />
 
                 
                 {blockchain.account === "" ||

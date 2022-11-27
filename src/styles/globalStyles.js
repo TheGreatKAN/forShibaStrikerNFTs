@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 // Used for wrapping a page component
 export const Screen = styled.div`
-  background-color: var(--primary);
+  background-color: var(--background);
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
@@ -10,7 +10,7 @@ export const Screen = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-`;
+  `;
 
 // Used for providing space between components
 export const SpacerXSmall = styled.div`
@@ -67,6 +67,15 @@ export const TextDescription = styled.p`
   color: var(--primary-text);
   font-size: 16px;
   line-height: 1.6;
+`;
+export const HeaderDiv = styled.div`
+
+display: flex;
+width:100%;
+// align-items: center;
+// justify-content:space-between;
+// margin-left: 3.5rem;
+
 `;
 
 export const StyledClickable = styled.div`

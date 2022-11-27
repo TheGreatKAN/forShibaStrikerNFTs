@@ -1,19 +1,20 @@
 {
-  "CONTRACT_ADDRESS": "0x220964dA285E709B69eD7CD694b44B215296b3A3",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x220964dA285E709B69eD7CD694b44B215296b3A3",
+  "CONTRACT_ADDRESS": "0x40038878A0455782027e8386C64aEA62b559772b",
+  "SCAN_LINK": "https://bscscan.com/address/0x40038878A0455782027e8386C64aEA62b559772b",
   "NETWORK": {
-    "NAME": "Ethereum",
-    "SYMBOL": "ETH",
-    "ID": 1
+    "NAME": "BSC",
+    "SYMBOL": "BSC",
+    "ID": 56
   },
-  "NFT_NAME": "MOJI NFT",
-  "SYMBOL": "MOJInft",
-  "MAX_SUPPLY": 6654,
-  "WEI_COST": 150000000000000000,
+  "NFT_NAME": "Apocalypse NFTs",
+  "SYMBOL": "Apocalypse NFTs",
+  "MAX_SUPPLY": 1000,
+  "WEI_COST": 100000000000000000 ,
   "DISPLAY_COST": 0.1,
   "GAS_LIMIT": 285000,
-  "MARKETPLACE": "OpenSea",
-  "WEBSITE": "https://vr-trinity.com",
-  "MARKETPLACE_LINK": "https://oblivion.art/explore/listings",
+  "MARKETPLACE": "",
+  "WEBSITE": "",
+  "CREDITCARD": "",
+  "MARKETPLACE_LINK": "",
   "SHOW_BACKGROUND": true
 }

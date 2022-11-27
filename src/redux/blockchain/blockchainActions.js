@@ -6,25 +6,31 @@ import CoinbaseWalletSDK from "@coinbase/wallet-sdk";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import { fetchData } from "../data/dataActions";
 
-const INFURA_ID = "";
+const INFURA_ID = "https://bsc-dataseed1.defibit.io/";
+
+
+// https://bsc-dataseed1.defibit.io/ Mainnet BSC : 56
+// https://goerli.infura.io/v3/bafa2a1c83d44b099dcae3a32b54207b Testnet Goerli : 5
+// https://hardworking-chaotic-flower.discover.quiknode.pro/88cf685b9e8e3a7c7023d3a2daff957d6feba706/ Mainet Eth :1
+
 
 const providerOptions = {
   walletconnect: {
     package: WalletConnectProvider, // required
     options: {
-      infuraId: "https://mainnet.infura.io/v3/5bea73e5d06345ab99b16bc3efa8ccaf", // required
+      infuraId: "https://bsc-dataseed1.defibit.io/", // required
       rpc: {
-        4: "https://mainnet.infura.io/v3/5bea73e5d06345ab99b16bc3efa8ccaf", // AVAX C-Chain
+      56: "https://bsc-dataseed1.defibit.io/", // AVAX C-Chain
       },
     },
   },
   walletlink: {
     package: WalletLink, // Required
     options: {
-      appName: "Ava Sharks", // Required
-      infuraId: "", // Required unless you provide a JSON RPC url; see `rpc` below
+      appName: "", // Required
+      infuraId: "https://bsc-dataseed1.defibit.io/", // Required unless you provide a JSON RPC url; see `rpc` below
       56: "https://bsc-dataseed1.defibit.io/", // Optional if `infuraId` is provided; otherwise it's required
-      chainId: 97, // Optional. It defaults to 1 if not provided
+      chainId: 5, // Optional. It defaults to 1 if not provided
       appLogoUrl: null, // Optional. Application logo image URL. favicon is used if unspecified
       darkMode: false, // Optional. Use dark theme, defaults to false
     },

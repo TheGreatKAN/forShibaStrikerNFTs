@@ -126,6 +126,8 @@ table {
 @font-face {
   font-family: "coder";
   src: local("coder"), url(font.woff) format("woff");
+  font-family: "roadRage";
+  src: local("roadrage"), url(roadrage.woff) format("woff");
 }
 
 body {
@@ -158,6 +160,7 @@ body {
 
 html {
   background-color: "#4C4C4C";
+  background-position: bottom;
 }
 
 div {
@@ -167,3 +170,580 @@ div {
   user-select: none;
   -o-user-select: none;
 }
+
+#video{
+  position: fixed;
+width: 100%;
+}
+#header{
+  display: flex;
+  width:100%;
+  z-index: 1;
+  column-gap: 2em;
+
+  justify-content: space-evenly;
+}
+#logo{
+  z-index: 1;
+  margin-left:30px;
+}
+#ready{
+  grid-row:6/10;
+  grid-column:2/7;
+  opacity: 0.8;
+  border-radius: 70%;
+}
+#headerLogo{
+ 
+  display: flex;
+   justify-content: center;
+    float: left;
+    align-items: center;
+    
+ 
+  
+  }
+  #svgbx{
+    display: flex;
+  
+  
+    flex-direction: row-reverse;
+    /* text-align: center; */
+    align-items: center;
+    
+    
+    }
+    svg{
+    position: relative;
+    float: right;
+     align-self: center;
+     margin-left: 15px;
+    
+    }
+    #buttons{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+    float: right;
+    
+    }
+    #home{
+      align-self: center;
+      border-color:#FFFFFF;
+      border-radius: 7px;
+      border-style:solid;
+      border-width:1px;
+      background-image:linear-gradient(to right, rgb(37, 0, 33) 40%, rgba(255, 0, 195, 0.2) 100%);
+      background-color: #7300a3;
+     margin-right: 10px;
+      padding: 10px;
+      font-weight: bold;
+      color: var(--primary);
+      width: auto;
+      cursor: pointer;
+    }
+    
+@keyframes animateBgOut {
+  0% { background-position: -10em; }
+   /* 50%{background-position: -10em;} */
+  100%{background-position: -1em;}
+
+}
+  
+
+@keyframes animateBg {
+  0% { background-position: -1em; }
+   /* 50%{background-position: -10em;} */
+  100%{background-position: -10em;}
+
+}
+
+#walletBox:not(:hover){
+  animation: animateBgOut 1s linear ;
+  background-image:linear-gradient(to right, rgb(37, 0, 33) 40%, rgba(255, 0, 195, 0.2) 100%);
+  background-color: #7300a3;
+  margin-left: 10px;
+  
+ 
+}
+#walletBox:hover{
+  animation: animateBg 1s linear ;
+  background-image:linear-gradient(to right, rgb(37, 0, 33) 40%, rgba(255, 0, 195, 0.2) 100%);
+      background-color: #7300a3;
+  transition: all ease-in-out 0.5s;
+  animation-iteration-count: 1;
+  margin-left: 10px;
+
+}
+#address{
+  color: white;
+}
+#banner{
+ /* border-top-left-radius: 30%;
+ border-bottom-right-radius: 30%;
+ border-bottom-left-radius: 60%;
+  border-top-right-radius: 60%; */
+grid-row: 1/11;
+grid-column: 1/11;
+opacity: 0.35;
+z-index: -1;
+
+
+}
+
+
+#rowOne{
+  width:100%;
+  display: flex;
+  z-index: 1;
+}
+ 
+
+
+#firstCard
+{
+  margin: 20px;
+ 
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 38px;
+  border-width: 10px;
+  border-style: groove;
+  border-color: rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+  overflow: hidden;
+ /* background-image: url(/src/elipse.png);
+ background-repeat:no-repeat;
+ background-position-x: 10%; */
+  /* position: ; */
+  position: relative;
+
+  width: 50%;
+}
+#secondCard{
+  margin: 20px;
+ 
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 38px;
+  border-width: 10px;
+  border-style: groove;
+  border-color: rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+  overflow: hidden;
+ /* background-image: url(/src/elipse.png);
+ background-repeat:no-repeat;
+ background-position-x: 10%; */
+  /* position: ; */
+  position: relative;
+
+  width: 50%;
+}
+#title{
+  grid-column: 1;
+  grid-row: 1;
+}
+#count{
+  display: flex;
+  justify-content: center;
+  grid-column: 1/11;
+  grid-row: 3/11;
+  align-items: baseline;
+}
+#minted{
+  font-family: roadRage;
+  font-size: 50px;
+  font-weight: 300;
+  color: white;
+}
+#flaming{
+  display: flex;
+  grid-column: 1/11;
+  grid-row: 4/11;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+#year{
+  position:relative;
+  margin:auto;
+  opacity: 0.8;
+}
+#tackle{
+  
+  display: flex;
+  grid-column: 4/11;
+  grid-row: 5/11;
+  justify-content: flex-end;
+}
+#guy{
+  width: 300px;
+}
+#dapp-box{
+  display: flex;
+  grid-column: 1/10;
+  grid-row: 1/11;
+}
+#cool{
+  grid-column: 8/11;
+  grid-row: 6/10;
+}
+#rowTwo{
+  z-index: 1;
+  overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 20px;
+    border-style: groove;
+    border-color: rgba(0, 0, 0, 0.2);
+ 
+  display: grid;
+  grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+  grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+   width: 100%;
+   height:25vh;
+ 
+  /* background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: 30%; */
+  }
+  #playing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 19/21;
+    grid-row: 12;
+    color: #FFFFFF;
+  }
+  #teams{
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+    margin-top:10px;
+    
+  }
+  #playing>a{
+    color: #FFFFFF;
+  }
+#balances{
+  display:flex;
+  color: #FFFFFF;
+}
+
+#tokens-txt{
+  font-size: 30px;
+  color: #e4a101;
+font-weight: 900;
+grid-column: 10/10;
+grid-row: 2/10;
+
+}
+#bscscan{
+  color: red;
+}
+#name-txt{
+ 
+  color: #e4a101;
+  font-weight: 300;
+  font-size: 15px  ;
+  grid-row: 3;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#balance-txt{
+  grid-column: 12 ;
+  color: #e4a101;
+  font-weight: 300;
+  font-size: 15px  ;
+  grid-row: 3;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#bnb{
+
+  color:#fff58b;
+  font-weight: 300;
+  font-size: 12px  ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#busd-txt{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#busd{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#luna{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#recession{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#bal{
+  
+  color:#fff58b;
+  font-weight: 300;
+  font-size: 12px  ;
+}
+#luna-txt{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:#fff58b;
+  font-weight: 300;
+  font-size: 12px  ;
+}
+#recession-txt{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#nameSymbol-box{
+  display: flex;
+  flex-direction: column;
+  grid-column: 9/15;
+  grid-row: 3/20;
+  color:#fff58b;
+  font-weight: 300;
+  font-size: 12px  ;
+  justify-content: space-between;
+  align-items: center;
+}
+#balances-box{
+  display:flex;
+  flex-direction: column;
+  color: #fff58b;
+  font-weight: 300;
+  font-size: 12px  ;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 15/18;
+  grid-row: 3/20;
+}
+#bal{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#token-box{
+  border-width: 10px;
+  border-style: dotted;
+  justify-content: space-evenly;
+  display:flex;
+  flex-direction: column;
+  grid-column: 9/18;
+  grid-row: 3/20;
+}
+#roww{
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+}
+#rowww{
+  display: flex;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+}
+#titled{
+  font-size: 30px;
+  color: #dfc304;
+font-weight: 900;
+}
+
+#nft{
+  grid-column: 19/20;
+  grid-row: 19/20;
+  color: #fff58b;
+  font-weight: 300;
+  font-size: 12px  ;
+}
+
+#nfts-owned{
+  display: inline;
+  font-size: 30px;
+  color: #dfc304;
+font-weight: 900;
+
+}
+#owned-box{
+  display:flex;
+  flex-direction:column;
+}
+#nft-box{
+  display:flex;
+  flex-direction: column;
+  color: #fff58b;
+  font-weight: 300;
+  font-size: 12px  ;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1/8;
+  grid-row: 3/20;
+  border-color: rgba(26,72,253,.3);
+  border-style: solid;
+  border-width: 2px;
+  background-color: rgba(28, 28, 28,0.5);
+  border-radius: 38px;
+}
+#token-box{
+  border-color: rgba(26,72,253,.3);
+  border-style: solid;
+  border-width: 2px;
+  background-color: rgba(28, 28, 28,0.5);
+  border-radius: 38px;
+}
+#youown{
+  display:flex;
+  flex-direction: row;
+  color: #fff58b;
+  font-weight: 300;
+  font-size: 12px  ;
+  justify-content: center;
+  margin-top:10px;
+  margin-bottom:10px;
+ 
+  
+  align-items: center;
+}
+#contractbox{
+  display: flex;
+  flex-direction: column;
+  color: #fff58b;
+  font-weight: 300;
+  font-size: 12px  ;
+  align-items: center;
+}
+#contract{
+  color: red;
+}
+#contract>a{
+  color: red;
+}
+
+#btn{
+  position: relative;
+  border-color:#FFFFFF;
+  border-radius: 7px;
+  border-style:solid;
+  border-width:1px;
+  background-image:linear-gradient(to right, rgb(0, 46, 6) 40%, rgba(252,252,252,0.2) 100%);
+  background-color: #00620d;
+  margin-right: 10px;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+#nft_image{
+  background-image: url(/src/logo.png);
+}
+
+#NFT{
+  height: auto;
+  width: auto;
+  border-color:white ;
+  border-radius: 5px;
+  border-style: solid;
+  z-index: 100;
+}
+#rowThree{
+  height:50vh;
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px){
+  #flamin{
+    width:150px;
+  }
+  #flaming{
+    grid-column: 5;
+    grid-row: 8;
+  }
+#rowOne{
+  flex-direction:column;  
+}
+#rowTwo{
+  display: flex;
+
+}
+#firstCard{
+  width: 90%;
+}
+#ready{
+  grid-column: 1;
+grid-row: 7;
+width: 150px;
+ 
+}
+/* #cool{
+  width: 100px;
+  grid-column: 7/11;
+  grid-row: 8;
+  } */
+  #year{
+    visibility:hidden;
+  }
+
+#secondCard{
+  width: 90%;
+}
+#tackle{
+  visibility: hidden;
+}
+#ball{
+  grid-column: 8;
+  grid-row: 9;
+}
+#address{
+  visibility: hidden;
+}
+#Capa_1{
+  visibility: hidden;
+}
+#header{
+  flex-direction: column;
+  align-items: center;
+}
+#rowTwo{
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#playing{
+  visibility: hidden;
+}
+#token-box{
+  visibility: hidden;
+  
+}
+#contractbox{
+  padding-top: 20px;
+}
+#nft-box{
+position: absolute;
+position: absolute;
+background-color: rgba(28, 28, 28,0.2);
+border-color: rgba(26,72,253,.1);
+border-radius: 1px;
+}
+#guy{
+  grid-column: 1/5;
+  grid-row: 1/5;
+  z-index: -2;
+}
+
+}
+

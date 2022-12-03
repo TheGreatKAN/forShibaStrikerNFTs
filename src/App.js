@@ -834,8 +834,8 @@ let ipfs = "https://nftstorage.link/ipfs/"
     NFT contract: &nbsp;
    
    <div id="contract">
-   <a href="https://bscscan.com/address/0x40038878A0455782027e8386C64aEA62b559772b" target="blank">
-   0x40038878A0455782027e8386C64aEA62b559772b
+   <a href="https://bscscan.com/address/0x9c71aA0b686d6A1ebB2cD9B9D9d6727ecB57ae6f" target="blank">
+   0x9c71aA0b686d6A1ebB2cD9B9D9d6727ecB57ae6f
    </a>
    </div>
    

@@ -1,16 +1,16 @@
 {
-  "CONTRACT_ADDRESS": "0x40038878A0455782027e8386C64aEA62b559772b",
-  "SCAN_LINK": "https://bscscan.com/address/0x40038878A0455782027e8386C64aEA62b559772b",
+  "CONTRACT_ADDRESS": "0x9c71aA0b686d6A1ebB2cD9B9D9d6727ecB57ae6f",
+  "SCAN_LINK": "https://bscscan.com/address/0x9c71aA0b686d6A1ebB2cD9B9D9d6727ecB57ae6f",
   "NETWORK": {
     "NAME": "BSC",
     "SYMBOL": "BSC",
     "ID": 56
   },
-  "NFT_NAME": "Apocalypse NFTs",
-  "SYMBOL": "Apocalypse NFTs",
-  "MAX_SUPPLY": 1000,
-  "WEI_COST": 100000000000000000 ,
-  "DISPLAY_COST": 0.1,
+  "NFT_NAME": "Strikers Qatar World Cup NFTs",
+  "SYMBOL": "Strikers Qatar World Cup NFTs",
+  "MAX_SUPPLY": 1600,
+  "WEI_COST": 170000000000000000 ,
+  "DISPLAY_COST": 0.17,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "",
   "WEBSITE": "",

@@ -9,9 +9,8 @@ import { fetchData } from "../data/dataActions";
 const INFURA_ID = "https://bsc-dataseed1.defibit.io/";
 
 
-// https://bsc-dataseed1.defibit.io/ Mainnet BSC : 56
-// https://goerli.infura.io/v3/bafa2a1c83d44b099dcae3a32b54207b Testnet Goerli : 5
-// https://hardworking-chaotic-flower.discover.quiknode.pro/88cf685b9e8e3a7c7023d3a2daff957d6feba706/ Mainet Eth :1
+
+
 
 
 const providerOptions = {
@@ -20,7 +19,7 @@ const providerOptions = {
     options: {
       infuraId: "https://bsc-dataseed1.defibit.io/", // required
       rpc: {
-      56: "https://bsc-dataseed1.defibit.io/", // AVAX C-Chain
+      56: "https://bsc-dataseed1.defibit.io/", 
       },
     },
   },

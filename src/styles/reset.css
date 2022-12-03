@@ -286,8 +286,11 @@ width: 100%;
   border-top-right-radius: 60%; */
 grid-row: 1/11;
 grid-column: 1/11;
-opacity: 0.35;
+opacity: 0.55;
 z-index: -1;
+width: 100%;
+height: 100%;
+
 
 
 }
@@ -303,7 +306,7 @@ z-index: -1;
 
 #firstCard
 {
-  margin: 20px;
+  margin: 1px;
  
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 38px;
@@ -322,8 +325,12 @@ z-index: -1;
 
   width: 50%;
 }
+#h{
+  color: black;
+  font-weight: 900;
+}
 #secondCard{
-  margin: 20px;
+  margin: 1px;
  
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 38px;
@@ -362,7 +369,7 @@ z-index: -1;
 #flaming{
   display: flex;
   grid-column: 1/11;
-  grid-row: 4/11;
+  grid-row: 4/10;
   align-items: center;
   justify-content: flex-start;
 }
@@ -644,19 +651,65 @@ font-weight: 900;
 #nft_image{
   background-image: url(/src/logo.png);
 }
-
-#NFT{
-  height: auto;
-  width: auto;
-  border-color:white ;
-  border-radius: 5px;
-  border-style: solid;
+#hmm-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#hmmm-box{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+#boxxx{
+  display: flex;
   z-index: 100;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  height: auto;
+width: 100%;
+}
+#hmm{
+align-self: end;
+}
+#hmm-text{
+color: white;
+align-self: center;
+}
+#none{
+  color: white;
+}
+#render{
+  text-align: center;
+}
+#yours{
+  justify-self: center;
+  align-self: center;
+  z-index: 100;
+  width: auto;
 }
 #rowThree{
-  height:50vh;
+display: flex;
+  z-index: 100;
 
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-width: 20px;
+  border-style: groove;
+
+
+
+
+  width: 100%;
+  height: auto;
 }
+
+
 
 
 
@@ -669,12 +722,30 @@ font-weight: 900;
   #flamin{
     width:150px;
   }
+  #yours{
+    width: 450px;
+  }
+  #hmmm-box{
+    flex-direction: column;
+    align-items: center;
+  }
+  #hmm{
+    align-self: center;
+  }
+  #nftsCards{
+    width: 50%;
+  }
   #flaming{
     grid-column: 5;
     grid-row: 8;
   }
+  #video{
+    width: 350%;
+  }
 #rowOne{
   flex-direction:column;  
+
+  align-items: center;
 }
 #rowTwo{
   display: flex;
@@ -694,9 +765,7 @@ width: 150px;
   grid-column: 7/11;
   grid-row: 8;
   } */
-  #year{
-    visibility:hidden;
-  }
+
 
 #secondCard{
   width: 90%;
@@ -708,9 +777,7 @@ width: 150px;
   grid-column: 8;
   grid-row: 9;
 }
-#address{
-  visibility: hidden;
-}
+
 #Capa_1{
   visibility: hidden;
 }
